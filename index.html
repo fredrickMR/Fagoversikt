@@ -4,27 +4,76 @@
     <meta charset="UTF-8">
     <title>Fredrick Meyn Ruud 2ITA - Fagoversikt</title>
     <style>
-      
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 220px;
+            height: 100%;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        nav h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 15px 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            margin-left: 220px; /* space for sidebar */
+            padding: 20px;
+        }
+
+        .welcome img {
+            margin-top: 10px;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <h2>Mailand 2ITA</h2>
-            <ul>
-                <li><a href="brukerstøtte/brukerstøtte.html">Brukerstøtte</a></li>
-                <li><a href="driftstøtte/driftstøtte.html">Driftstøtte</a></li>
-                <li><a href="utvikling/utvikling.html">Utvikling</a></li>                
-            </ul>
-        </nav>
-    </div>
+    <nav>
+        <h2>Mailand 2ITA</h2>
+        <ul>
+            <li><a href="brukerstøtte/brukerstøtte.html">Brukerstøtte</a></li>
+            <li><a href="driftstøtte/driftstøtte.html">Driftstøtte</a></li>
+            <li><a href="utvikling/utvikling.html">Utvikling</a></li>                
+        </ul>
+    </nav>
 
-    <main>
-        <div class="welcome">
-            <h1>Velkommen</h1>
-            <p>Her finner du oversikt over fagene og ukentlige oppdateringer på prosjekter osv.</p>
-            <img src="https://media.gwnews.com/images/articles/_1500x937_crop_center-center_82_line/237144/1_arcticfox-t.jpg" width = 200 height="130">
-        </div>
-    </main>
+    <div class="container">
+        <main>
+            <div class="welcome">
+                <h1>Velkommen</h1>
+                <p>Her finner du oversikt over fagene og ukentlige oppdateringer på prosjekter osv.</p>
+                <img src="https://media.gwnews.com/images/articles/_1500x937_crop_center-center_82_line/237144/1_arcticfox-t.jpg" width="200" height="130">
+            </div>
+        </main>
+    </div>
 </body>
 </html>
